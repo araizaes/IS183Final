@@ -1,0 +1,15 @@
+<button class="btn" [routerLink]="['/users']">back to users</button>
+
+<div *ngIf="tank" class="user-create-container box-shadow">
+    <div class="cover">
+        <img class="user-cover" [src]="user.image_url" alt="user">
+  </div>
+    <div class="user-form">
+  <label class="label">User Name</label>
+  <input class="form-input" type="text">
+  <label class="label">Serial Number</label>
+  <input class="form-input" type="text">
+  <label class="label">Gallons</label>
+  <input class="form-input" type="text">
+  <button class="btn pull-right">Update Tank</button>
+</div>
